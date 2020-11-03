@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+
+#child1 {
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    flex-grow: 3;
+    align-items: center;
+}
+
+#child2 {
+    margin-top: 10px;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    flex-grow: 0.2;
+}
+
+#child2:hover {
+    color: grey;
+    transition: all 0.3s ease 0s
+}
+
+#child3 {
+    margin-top: 10px;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    flex-grow: 0.2;
+}
+
+#child3:hover {
+    color: grey;
+    transition: all 0.3s ease 0s
+}
+
+span {
+    display: none;
+}
+
+#child4 {
+    margin-top: 10px;
+    width: 100px;
+    height: 70px;
+    background-color: black;
+}
+
+.button1 {
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+}
+
+.button1:hover {
+    cursor: pointer;
+    color: grey;
+    background-color: black;
+}
+
+#a1 {
+    color: white;
+    text-decoration: none;
+}
+
+#a1:hover {
+    color: grey;
+    transition: all 0.3s ease 0s;    
+
+}
+
+#a2 {
+    color: white;
+    text-decoration: none;
+}
+
+#a2:hover {
+    color: grey;
+    transition: all 0.3s ease 0s;    
+}
+
+
+#image1 {
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    image-rendering: optimizeQuality;
+}
+
+/* li, a, button {
+    margin: 7px;
+    padding: 4px;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 0.6cm;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 55, 55);
+    -ms-flex-item-align: center;
+    box-sizing: content-box;
+}
+
+.logo {
+    margin: 10px;
+    cursor: pointer;
+    block-size: 1.6cm;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    text-align: center;
+    display: inline-block;
+    padding: 0px 1px;
+}
+
+.links {
+    transition: all 0.3s ease 0s
+}
+
+.links li a:hover {
+    color: grey;
+}
+
+button {
+    padding: 3px 6px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s
+} */
+
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url(./img/Graphics-card-406x320px.jpg);
+    flex-direction: row-reverse;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    color: rgb(255, 255, 255);
+    font-family: 'Commissioner', sans-serif;
+    font-size: 0.6cm;
+}
+
+.body2 {
+    margin: 30px;
+    padding: 0.5px;
+}
+
+.head {
+    font-family: 'Roboto', sans-serif;
+    /* border-bottom: solid 2px rgba(255, 255, 255, 0.357); */
+    letter-spacing: 0.05cm;
+}
+
+#head_1 {
+    margin-top: 10px;
+}
+
+#p_1 {
+    text-align: justify;
+}
+
+#p_2 {  
+    text-align: justify;
+    text-shadow: 1px;
+}
+
+/* #button_1, #ye {
+    padding: 0.2cm 0.4cm;
+    font-size: 0.5cm;
+    background-color: black;
+    border: 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+#button_1, #ye:hover {
+    cursor: pointer;    
+    color: rgb(143, 143, 143);
+} */
