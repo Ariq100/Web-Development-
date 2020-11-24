@@ -104,56 +104,6 @@ span {
     image-rendering: optimizeQuality;
 }
 
-/* li, a, button {
-    margin: 7px;
-    padding: 4px;
-    font-family: 'Commissioner', sans-serif;
-    font-size: 0.6cm;
-    color: black;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(56, 55, 55);
-    -ms-flex-item-align: center;
-    box-sizing: content-box;
-}
-
-.logo {
-    margin: 10px;
-    cursor: pointer;
-    block-size: 1.6cm;
-}
-
-.links {
-    list-style: none;
-}
-
-.links li {
-    text-align: center;
-    display: inline-block;
-    padding: 0px 1px;
-}
-
-.links {
-    transition: all 0.3s ease 0s
-}
-
-.links li a:hover {
-    color: grey;
-}
-
-button {
-    padding: 3px 6px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s
-} */
-
 body {
     background-color: rgb(0, 0, 0);
     background-image: url(./img/Graphics-card-406x320px.jpg);
@@ -191,17 +141,3 @@ body {
     text-align: justify;
     text-shadow: 1px;
 }
-
-/* #button_1, #ye {
-    padding: 0.2cm 0.4cm;
-    font-size: 0.5cm;
-    background-color: black;
-    border: 0;
-    color: aliceblue;
-    text-align: center;
-}
-
-#button_1, #ye:hover {
-    cursor: pointer;    
-    color: rgb(143, 143, 143);
-} */
