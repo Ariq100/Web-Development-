@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@300&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#rotate {
+    background-image: url(./photo_2021-04-20_16-26-46.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#translate {
+    background-color:rgb(52,73,94);
+    /* transform: translate(100px, -20px); */
+    transform: translateX(20px);
+    transform: translateY(30px);
+}
+
+#rotate {
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#rotate:hover {
+    transform: rotate(360deg);
+    animation-play-state: paused;
+    animation: custom-animation 1s ease-in;
+}
+
+#scale {
+    background-color: rgb(231,76,60);
+    background-image: url(./Capture.PNG);
+    transition: 1s;
+}
+
+#scale:hover {
+    transform: scale(2) rotate(360deg);
+}
+
+@keyframes custom-animation {
+    
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main > * {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+:root {
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(18, 28, 85, 0.5)), url(./UedjHDB.jpg);
+    color: rgb(92, 91, 91);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-color: black;
+}
+
+.parent {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(14, 143, 165);
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    font-size: 20px;
+}
+
+#child1 {
+    order: 1;
+    flex-grow: 4;
+    font-family: 'Original Surfer', cursive;
+    font-size: 30px;
+    /* justify-content:; */
+}
+
+#child2 {
+    order: 2;
+    flex-grow: 0.5;
+    /* justify-content: space-between; */
+}
+
+#child3 {
+    order: 3;
+    flex-grow: 0.5;
+}
+
+#child4 {
+    order: 4;
+    flex-grow: 0.5;
+}

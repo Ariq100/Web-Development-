@@ -1,0 +1,24 @@
+.nothing {
+    height: 150vh;
+}
+
+.parent > * {
+    width: 100vh;
+    height: 100px;
+    margin: 50px;
+}
+
+.red {
+    background-color: red;
+    padding: 20px;
+}
+
+.blue {
+    background-color: blue;
+    padding: 20px;
+}
+
+.grey {
+    background-color: grey;
+    padding: 20px;
+}

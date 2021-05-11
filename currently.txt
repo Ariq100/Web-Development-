@@ -1,2 +1,0 @@
-Currently working on Nvidia Sign html 
-Trying to make a web to practice it all

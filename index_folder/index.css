@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
 body{
-    background-color:rgb(49, 47, 47);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(18, 28, 85, 0.5)), url(./Capture.PNG);    /* background-repeat: no-repeat; */
     font-family:Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
     color: rgb(219, 248, 248);
+    /* color: black; */
 }
 h1{
     font-size: 100px;
@@ -13,13 +15,15 @@ h1{
 h2{
     letter-spacing: 5px;
 }
+
 h3{
-    font-size: 50px;
     letter-spacing: 5px;
 }
+
 p{
     line-height: 20px;
 }
+
 a{
     font-size: 50px;
     color: aliceblue;
@@ -40,9 +44,9 @@ ul{
 table,
 td,
 th{
-    border: 3px dashed black;
-
+    border: 3px solid black;
 }
+
 input{
     border:aqua;
     padding: 10px 5x 10px 5px;

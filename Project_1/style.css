@@ -1,0 +1,25 @@
+:root {
+    --bgColor: #ecf0f1;
+    --navBgColor: #7f8c8d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--bgColor);
+}
+
+.parent {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--navBgColor);
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
