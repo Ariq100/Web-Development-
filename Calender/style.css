@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --font-Sans: 'Open Sans', sans-serif;
+    --bg-color: #dfe6e9;
+    --bg-calculator: #bdc3c7;
+    --primary-color: #81C3D7;
+    --primarytext-color: #000000;
+    --text-color1: #838486;
+    --top-label-color: #d2d7df;
+    --reminder-color: #8e9aaf;
+}
+
+body {
+    font-family: var(--font-Sans);
+    background-color: var(--bg-color);
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: var(--primarytext-color);
+}
+
+.box {
+    background-color: var(--bg-calculator);
+    width: 50vh
+}
+
+.parent .box .top_label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--top-label-color);
+}
+
+.parent .box .top_label h3 {
+    align-items: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+.parent .months{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.parent .months span{
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.parent .days ul{
+    text-align: center;
+}
+
+.parent .days ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.parent .date ul{
+    text-align: center;
+    padding: 10px;
+}
+
+.parent .date ul li{
+    display: inline-flex;
+    padding: 10px;
+    font-weight: var(--poppins-weight-700);
+}
+
+.arent .ad-reminder{
+    text-align: center;
+}
+
+.parent .ad-reminder span{
+    color: var(--reminder-color);
+    padding-left: 20px;
+}
+
+.parent .buttons {
+    display: flex;
+    justify-content: center;  
+}
+
+.parent .buttons a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    padding: 10px;
+}
