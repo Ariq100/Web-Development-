@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&family=Open+Sans&family=Roboto&display=swap');
+
+:root {
+    --title-font: 'KoHo', sans-serif;;
+    --plan-font: 'Roboto', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    --bg-color: rgb(255, 255, 255);
+    --title-color: rgba(0, 0, 0, 0.734);
+    --border-color: rgba(0, 255, 255, 0.248);
+    --cardtitle-color: rgba(0, 0, 0, 0.248);
+    --text-color: rgba(0, 0, 0, 0.474);
+    --plan2-color: rgba(7, 79, 112, 0.397);
+    --button-bgcolor: rgb(43, 131, 213);
+    --button-fontcolor: white;
+    --subscribtionbox-shadow: 1px 1px 10px black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 100vh;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.parent .title {
+    text-align: center;
+    padding-top: 50px;
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+
+.parent .plan {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: var(--plan-font);
+}
+
+.parent .plan a {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.parent .plan a:nth-child(2) {
+    color: var(--plan2-color);
+}
+
+.parent .subscribtion-box {
+    display: flex;
+    padding: 9vh;
+    justify-content: space-around;
+}
+
+.parent .subscribtion-box .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    width: 35vh;
+    height: 35vh;
+    border: 1px solid;
+    border-color: var(--border-color);
+    box-shadow: var(--subscribtionbox-shadow);
+}
+
+.parent .subscribtion-box .card .card-title {
+    color: var(--cardtitle-color);
+}
+
+.parent .subscribtion-box .card .price {
+    padding-top: 10vh;
+}
+
+.parent .subscribtion-box .card .slots {
+    padding-top: 20px;
+}
+
+.parent .lower-text {
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.parent .lower-text a {
+    background-color: var(--button-bgcolor);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--button-fontcolor);
+    cursor: pointer;
+    width: 20vh;
+    text-align: center;
+} 
