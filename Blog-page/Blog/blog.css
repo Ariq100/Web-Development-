@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-weight: 600;
+  font-size: 16px;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* nav-code */
+
+.nav-area {
+  list-style: none;
+}
+
+.nav-area li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.nav-area a img {
+  width: 30%;
+  text-align: right;
+}
+
+.btn-area {
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+.nav-links ul li {
+  display: block;
+}
+
+.nav-links ul li {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.nav-links {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.363);
+  height: 100vh;
+  width: 300px;
+  top: 0;
+  left: -300px;
+  text-align: left;
+  z-index: 2;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.fa {
+  text-align: right;
+  display: block;
+  color: white;
+  margin: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-links ul {
+  padding: 30px;
+}
+
+header ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.hero-section h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 10%;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+.hero-section h1 span {
+  padding-left: 10px;
+  color: #b3cde0;
+}
+
+.hero-section h2 {
+  text-align: center;
+  font-size: 60px;
+  color: #2bd598;
+  font-weight: 600;
+  letter-spacing: 20px;
+}
+
+#card-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#card-parent .card {
+  width: 20%;
+  top: 100%;
+}
+
+.card {
+  background-color: #dfe4ea;
+  margin: 0px 40px;
+  height: 30%;
+  transition: 1s;
+  margin-top: 40%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.button1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button1 a {
+  background-color: #6497b1;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+.readmore-button {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.readmore-button a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  padding: 20px;
+  transition: 1s;
+}
+
+.readmore-button a:hover {
+  background-color: black;
+  color: white;
+}
+
+main #box-card-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+main #box-card-parent .card1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background-color: white;
+}
+
+main #box-card-parent .card1 p {
+  text-align: justify;
+  font-weight: 500;
+}
+
+main #box-card-parent .card1 p span {
+  text-align: left;
+  letter-spacing: 7px;
+  font-size: 40px;
+}
+
+main #box-card-parent .card1 img {
+  width: 40%;
+  padding: 40px;
+  padding: 70px;
+}
+
+main #box-card-parent .card2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  color: black;
+}
+
+main #box-card-parent .card2 p {
+  text-align: right;
+  font-weight: 500;
+}
+
+main #box-card-parent .card2 p span {
+  text-align: left;
+  letter-spacing: 7px;
+  font-size: 40px;
+}
+
+main #box-card-parent .card2 img {
+  width: 40%;
+  padding: 40px;
+  padding: 70px;
+}
+
+#footer-cards .footer-cards-child {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.sec {
+  background: #fff;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec .content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.about-texts {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.about-btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #1e1f26;
+  text-decoration: none;
+  color: #fff;
+  animation: border-animation 2s ease-in forwards infinite;
+}
+.about-btn:hover{
+  color: #7674ed;
+}
+/* about section end */
+
+/* services */
+
+.services {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.services .box {
+  width: 300px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.services .box .iconbx {
+  margin-top: 25px;
+}
+
+.services .box .iconbx img {
+  max-width: 70px;
+  margin-bottom: 15px;
+}
+
+.services .box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* services end*/
+
+/* stats */
+
+/* .sec-stats {
+  /* background: ; */
+  /* padding-top: 50vh; */
+  /* margin-top: -250px; */
+/* } */ 
+
+.sec-stats .content h3, .sec-stats .content p {
+  color: black;
+}
+
+.sec-stats .sec-stats {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+}
+.parent .stats-box {
+  display: flex;
+  justify-content: space-around;
+  max-height: 20vh;
+}
+
+.sec-stats .stats-box {
+  display: flex;
+  justify-content: space-around;
+  max-height: 40vh;
+  padding-top: 19vh;
+}
+
+.sec-stats .stats-box .card3 {
+  height: 25vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.sec-stats .footer {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1e1f26;
+  color: white;
+}
+
+.sec-stats .footer .copyright {
+  padding: 5vh;
+}

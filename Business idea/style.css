@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-half {
+    height: 75vh;
+    width: 100%;
+    background-image: url(./Bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.first-half .middle-texts {
+    display: inline-flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 80px;
+    justify-content: space-between;
+}
+
+.first-half .middle-texts #b1 {
+    background-color: rgb(49, 138, 233);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.first-half .middle-texts #b1:hover {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(49, 138, 233);
+    background: transparent;
+}
+
+.first-half .middle-texts #b2 {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(49, 138, 233);
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.first-half .middle-texts #b2:hover {
+    transition: 1s;
+    background-color: rgb(49, 138, 233);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar .logo img {
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-stuffs {
+    display: flex;
+    width: 125vh;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+
+.navbar .navbar-stuffs #Home, #Download {
+    background-color: rgb(49, 138, 233);
+    padding: 5px;
+}
+
+.second-half {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.second-half #text1 {
+    padding-left: 50vh;
+}
+
+.second-half #title {
+    padding-left: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-self: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.second-half .box1 {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 200vh;    
+}
+
+.second-half .box1 .card1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vh;
+    height: 30vh;
+    width: 50vh;
+}
+
+.second-half .box1 .card1 img {
+    /* padding-left: 0px; */
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-half .box1 .card1 b {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;    
+}
+
+.second-half .box1 .card1 p {
+    padding-top: 10px;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#calc-parent {
+    width: 25%;
+    /* height: 100vh; */
+    background-color: #e63946;
+}
+
+#calc-parent .year {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    padding-top: 5px;
+    background-color: rgba(126, 17, 17, 0.844);
+}
+
+#calc-parent .year p h3 {
+    font-weight: 300;
+}
+
+#calc-parent .days {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    background-color: rgba(126, 17, 17, 0.398);
+    color: white;
+}
+
+#calc-parent .dates {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+#calc-parent .dates li{
+    color: white;
+    list-style: none;
+    height: 40px;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6px;
+}
+
+#calc-parent .dates li {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}
+
+#calc-parent .cancel-ok {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: right; */
+    padding-left: 200px;
+    color: white;
+}
+
+#calc-parent .cancel-ok a {
+    padding: 10px;
+}
+
+#calc-parent .cancel-ok #b1 {
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.481);
+    border-radius: 10px;
+}

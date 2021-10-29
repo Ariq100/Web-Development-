@@ -39,7 +39,7 @@
 }
 
 #scale:hover {
-    transform: scale(2) rotate(360deg);
+    transform: scale(2) rotate(360000000deg);
 }
 
 @keyframes custom-animation {
