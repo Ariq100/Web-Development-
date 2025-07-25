@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    border: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 80%);
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 50%);
+    border-radius: 15px;
+    border-color: black;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 10rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+#keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    font-size: 5rem;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 50%);
+    color:white;
+    font: size 10rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 90%);
+}
+
+button:active{
+    background-color: rgba(0, 0, 0, 15%);
+}
+
+.operator{
+    background-color: rgba(255, 166, 0, 55%);
+}
+
+.operator:hover{
+    background-color: rgba(255, 166, 0, 65%);
+}
+
+.operator:active{
+    background-color: rgba(255, 166, 0, 75%);
+}
+
+.BackSpace{
+    background-color: rgba(255, 0, 0, 0.514);  
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.BackSpace:hover{
+    background-color: rgba(255, 0, 0, 80%);  
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.BackSpace:active{
+    background-color: rgba(255, 0, 0, 1000%);  
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
