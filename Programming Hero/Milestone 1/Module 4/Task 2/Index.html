@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: lightcyan;
+            color: purple;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            text-shadow: 2px 2px 50px black;
+        }
+
+        button{
+            transition: 300ms;
+            width: 100px;
+            background-color: rgb(110, 25, 150);
+            color: white;
+        }
+
+        button:hover {
+            background-color: pink;
+            color: black;
+        }
+        .StorySubmission{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0px;
+            border-bottom: 2px solid rgb(110, 25, 150);
+            border-top: 2px solid rgb(110, 25, 150);
+            padding: 25px 0px;
+        }
+        
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0px;
+            border-bottom: 2px solid rgb(110, 25, 150);
+            padding: 25px 0px;
+        }
+        
+        form{
+            display: inline;
+        }
+        
+        .TennisTournament{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0px;
+            padding: 25px 0px;
+            border-bottom: 2px solid rgb(110, 25, 150);
+        }
+
+        tr, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            column-span: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="StorySubmission">
+        <head>
+            <h1>Tell Your Story</h1>
+        </head>
+        <textarea name="story" id="story" cols="90" rows="10" placeholder="Write your story here..."></textarea>
+    </section>
+
+    <section class="form">
+        <form>
+            <label>Name: 
+                <br>
+                <input type="text" name="name" id="name" placeholder="Your name...">
+            </label>
+            <br>
+            <br>
+            <select-radio>
+                <label>Rate the story</label>
+                <br>
+                <input type="radio" name="rate" id="1" value="Good">
+                <label for="1">Good</label>
+                <input type="radio" name="rate" id="2" value="Average">
+                <label for="2">Average</label>
+                <input type="radio" name="rate" id="3" value="Bad">
+                <label for="3">Bad</label>
+                <br>
+            </select-radio>
+            </select>
+    
+            <textarea name="comments" id="comments" cols="30" rows="8" placeholder="Tell how you feel about the story"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="TennisTournament">
+        <h1>Table Tennis Tournament</h1>
+        <table>
+            <tr>
+                <th>
+                    Round 1
+                </th>
+                <th>
+                    Player A
+                </th>
+                <th>
+                    Player B
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Match 1
+                </td>
+                <td>
+                    Roger Federer
+                </td>
+                <td>
+                    Rafael Nadal
+                </td>
+            <tr>
+                <td>
+                    Match 2
+                </td>
+                <td>
+                    Mark
+                </td>
+                <td>
+                    Sarah
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Round 2
+                </th>
+                <th>
+                    Player C
+                </th>
+                <th>
+                    Player D
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Match 3
+                </td>
+                <td>
+                    TBD
+                </td>
+                <td>
+                    TBD
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Match 4
+                </td>
+                <td>
+                    TBD
+                </td>
+                <td>
+                    TBD
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Final
+                </th>
+                <th>
+                    Winner of Match 3
+                </th>
+                <th>
+                    Winner of Match 4
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Champion
+                </td>
+                <td>
+                    TBD
+                </td>
+                <td>
+                    TBD
+                </td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
