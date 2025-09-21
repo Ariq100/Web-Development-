@@ -122,10 +122,9 @@ body {
 }
 
 .CardBox {
-    width: 1920px;
-    height: 1222px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    alight-items: center;
     justify-content: center;
     margin: 167px 0px 184px 0px;
 }
@@ -133,7 +132,7 @@ body {
 .CardBox #Frame17 {
     /* Frame 17 */
     width: 1320px;
-    height: 871px;
+    height: 100%;
     /* Auto layout */
     display: flex;
     flex-direction: column;
@@ -242,6 +241,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin-top: 2vh;
 }
 
 .caption{
@@ -278,4 +278,83 @@ body {
     text-align: center;
 }
 
+.Frame9{
+    /* Frame 9 */
+    width: 50%;
+    height: 50%;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 14px 32px 14px 32px;
 
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+    border: none;
+
+    color: rgba(16, 16, 16, 1);
+
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.About-Us{
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 1);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.About-Us img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#Frame21{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#Frame17{
+    /* Frame 17 */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+}
+
+#Frame17 > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Frame17 h1{
+
+
+    color: rgba(16, 16, 16, 1);
+
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+}
