@@ -1,0 +1,29 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Home-Images{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#Background{
+    position: relative;
+    left: -500px;
+
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+#Hero-image{
+    position: fixed;
+    right: 200px;
+    width: 100%;
+    height: auto;
+    background: none;
+}
