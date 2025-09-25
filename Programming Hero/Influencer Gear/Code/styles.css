@@ -71,7 +71,7 @@ section > nav > ul > li a {
     gap: 20px;
 }
 
-#home-text > h1{
+#home-text > #Text >  h1{
     /* Start your Journey as Influencer */
     width: 582px;
     height: 133px;
@@ -86,7 +86,7 @@ section > nav > ul > li a {
     text-align: left;
 }
 
-#home-text > p{
+#home-text > #Text > p{
     color: rgba(58, 58, 58, 1);
 
     font-family: Poppins;
@@ -208,7 +208,7 @@ section > nav > ul > li a {
 }
 
 .cards{
-    width: 20vw;
+    width: auto;
     height: auto;
 
     border-radius: 5px;
@@ -284,6 +284,7 @@ section > nav > ul > li a {
 
 #Featured-Product div{
     width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -301,8 +302,8 @@ section > nav > ul > li a {
 
 #Featured-Product #caption{
     /* Featured products at one place */
-    width: 610px;
-    height: 60px;
+    width: auto;
+    height: auto;
 
     width: 40vw;
 
@@ -319,8 +320,8 @@ section > nav > ul > li a {
 
 #caption p{
     /* Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. */
-    width: 501px;
-    height: 88px;
+    width: 100%;
+    height: auto;
 
     color: rgba(108, 108, 108, 1);
 
@@ -391,4 +392,74 @@ footer p{
     line-height: 24px;
     letter-spacing: 0%;
     text-align: left;
+}
+
+@media screen and (max-width: 578px) {
+    section > nav {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 5vh 0 5vh 0;
+        gap: 1vh;
+    }
+
+    #home-main {
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .cards{
+        width: 90%;
+        padding: 3%;
+    }
+
+
+    #Featured-Product{
+        /* display: flex; */
+        flex-direction: column-reverse;
+    }
+
+    #bg-circle2{
+        background: none;
+    }
+
+    #Brands{
+        margin-top: 5vh;
+    }
+
+    .border{
+        background: white;
+    }
+
+    #Products{
+        margin-top: 0;
+    }
+
+    #Featured-Product{
+        gap: 5vh;
+    }
+
+    #Featured-Product div, #Featured-Product #caption{
+        width: 100%;
+        height: auto;
+        margin: 2%;
+    }
+
+    #Featured-Product #caption{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+
 }
