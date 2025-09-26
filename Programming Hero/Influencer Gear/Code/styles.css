@@ -414,7 +414,13 @@ footer p{
         width: 100%;
         align-items: center;
         justify-content: center;
-        text-align: justify;
+    }
+
+    #home-text #Text h1, #home-text #Text p{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
 
     .cards{
@@ -449,17 +455,32 @@ footer p{
     }
 
     #Featured-Product div, #Featured-Product #caption{
-        width: 100%;
+        margin: 0;
+        width: auto;
         height: auto;
         margin: 2%;
+
+        justify-content: center;
+        align-items: center;
     }
 
-    #Featured-Product #caption{
+    #Featured-Product #caption h1, #Featured-Product #caption p, #Featured-Product #caption, #Featured-Product #caption button{
         align-items: center;
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
+        gap: 7vh;
     }
 
+    #Featured-Product div img{
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        padding: 0;
 
+    }
+
+    #Featured-Product #caption{
+        margin: 0;
+    }
 }
