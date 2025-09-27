@@ -472,6 +472,10 @@ footer p{
         gap: 7vh;
     }
 
+    #Featured-Product #caption h1, #Featured-Product #caption p {
+        width:80%;
+    }
+
     #Featured-Product div img{
         justify-content: center;
         width: 90%;
@@ -483,4 +487,5 @@ footer p{
     #Featured-Product #caption{
         margin: 0;
     }
+
 }
