@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li class="flex flex-row text-center justify-self-center">
+                                <img src="../assets/logo.png">
+                                <p class="my-auto">Donate Bangladesh</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="w-70 btn btn-ghost text-xl bg-[#B4F461] ml-20">Blog</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="flex flex-row text-center justify-self-center">
+                            <img src="../assets/logo.png">
+                            <p class="my-auto">Donate Bangladesh</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2 mr-20">
+                    <img src="../assets/coin.png">
+                    <p id="Wallet">5500</p>
+                    <p>Coins</p>
+                </div>
+            </div>
+        </nav>
+
+        <section class="w-max mt-20 gap-10 flex flex-row text-center mx-auto">
+            <button class="btn w-40 h-15 bg-[#B4F461]">
+                   <p>Donation</p> 
+            </button>
+
+            <button class="btn  w-40 h-15 bg-white border-2 border-gray-300 text-black">
+                <p class="text-gray-600">History</p>
+            </button>
+        </section>
+            
+        <section>
+            <div class="card border-2 p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
+                <figure>
+                    <img
+                    src="../assets/noakhali.png"
+                    alt="Album" /
+                    class="w-2xl">
+                </figure>
+                <div class="card-body w-1/2">
+                    <div class="flex flex-inline text-center justify-center space-x-2 bg-gray-200 rounded-lg p-2 w-max">
+                        <img src="../assets/coin.png" class="w-5 h-5">
+                        <p id="Noakhali-Donations" class="font-medium">0</p> 
+                        <p>Coins</p>
+                    </div>
+                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <input class="textarea textarea-bordered w-full mt-4 h-1" placeholder="Write Donation Amount" id="Noakhali-Donation-Amount"></input>
+                    <div class="card-actions">
+                        <button class="btn bg-[#B4F461] text-black w-full">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
