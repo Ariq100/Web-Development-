@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-[#9DD587]">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Donation Bangladesh</title>
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="./index.js"></script>
         <link rel="stylesheet" href="./style.css">
     </head>
 
-    <body>
+    <body class="bg-[#9DD587]">
         <nav>
-            <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar bg-[#648767] shadow-sm">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -27,17 +27,17 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="w-70 btn btn-ghost text-xl bg-[#B4F461] ml-20">Blog</a>
+                    <a class="w-70 btn btn-ghost text-xl bg-[#7CDF64] font-bold ml-20 hover:bg-green-500 hover:border-green-500 duration-300 ease-in-out">Blog</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li class="flex flex-row text-center justify-self-center">
                             <img src="../assets/logo.png">
-                            <p class="my-auto">Donate Bangladesh</p>
+                            <p class="my-auto  font-bold text-xl text-white">Donate Bangladesh</p>
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-2 mr-20">
+                <div class="navbar-end gap-2 mr-20 font-medium text-lg text-white">
                     <img src="../assets/coin.png">
                     <p id="Wallet">5500</p>
                     <p>Coins</p>
@@ -45,18 +45,18 @@
             </div>
         </nav>
 
-        <section class="w-max mt-20 gap-10 flex flex-row text-center mx-auto">
-            <button class="btn w-40 h-15 bg-[#B4F461]">
+        <section class="w-max mt-20 gap-10 flex flex-row text-center mx-auto" id="Button-Section">
+            <button id="btn-donations" onclick="ShowDonations(), btnFeatureDonations()" class="duration-300 ease-in-out btn w-40 h-15 bg-[#7CDF64] border-green-700 font-bold text-lg hover:bg-green-500 hover:border-green-500">
                    <p>Donation</p> 
             </button>
 
-            <button class="btn  w-40 h-15 bg-white border-2 border-gray-300 text-black">
-                <p class="text-gray-600">History</p>
+            <button id="btn-history" onclick="ShowHistory(), btnFeatureHistory()" class="duration-300 ease-in-out btn  w-40 h-15 bg-white border-2 border-green-700 text-black font-bold text-lg text-gray-600 hover:bg-green-500 hover:border-green-500">
+                <p>History</p>
             </button>
         </section>
             
-        <section>
-            <div class="card border-2 p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
+        <section id="Donation" class="py-10">
+            <div class="card p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
                 <figure>
                     <img
                     src="../assets/noakhali.png"
@@ -69,16 +69,16 @@
                         <p id="Noakhali-Donations" class="font-medium">0</p> 
                         <p>Coins</p>
                     </div>
-                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title" id="Donation1">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input class="textarea textarea-bordered w-full mt-4 h-1" placeholder="Write Donation Amount" id="NoakhaliDonationAmount"></input>
                     <div class="card-actions">
-                        <button class="btn bg-[#B4F461] text-black w-full" onclick="NoakhaliDonations()">Donate Now</button>
+                        <button class="btn bg-[#7CDF64] text-black w-full font-medium text-xl hover:bg-green-500 hover:border-green-500 duration-300 ease-in-out" onclick="NoakhaliDonations()">Donate Now</button>
                     </div>
                 </div>
             </div>
 
-            <div class="card border-2 p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
+            <div class="card p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
                 <figure>
                     <img
                     src="../assets/quota-protest.png"
@@ -91,16 +91,16 @@
                         <p id="Quota-Donations" class="font-medium">2400</p> 
                         <p>Coins</p>
                     </div>
-                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+                    <h2 class="card-title" id="Donation2">Aid for Injured in the Quota Movement</h2>
                     <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                     <input class="textarea textarea-bordered w-full mt-4 h-1" placeholder="Write Donation Amount" id="QuotaDonationAmount"></input>
                     <div class="card-actions">
-                        <button class="btn bg-[#B4F461] text-black w-full" onclick="QuotaMovementDonations()">Donate Now</button>
+                        <button class="btn bg-[#7CDF64] text-black w-full font-medium text-xl hover:bg-green-500 hover:border-green-500 duration-300 ease-in-out" onclick="QuotaMovementDonations()">Donate Now</button>
                     </div>
                 </div>
             </div>
 
-            <div class="card border-2 p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
+            <div class="card p-4 lg:card-side bg-base-100 shadow-sm w-3/4 mx-auto mt-20">
                 <figure>
                     <img
                     src="../assets/feni.png"
@@ -113,15 +113,19 @@
                         <p id="Feni-Donations" class="font-medium">600</p> 
                         <p>Coins</p>
                     </div>
-                    <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+                    <h2 class="card-title" id="Donation3">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                     <input class="textarea textarea-bordered w-full mt-4 h-1" placeholder="Write Donation Amount" id="FeniDonationAmount"></input>
                     <div class="card-actions">
-                        <button class="btn bg-[#B4F461] text-black w-full" onclick="FeniDonations()">Donate Now</button>
+                        <button class="btn bg-[#7CDF64] text-black w-full font-medium text-xl hover:bg-green-500 hover:border-green-500 duration-300 ease-in-out" onclick="FeniDonations()">Donate Now</button>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section id="Donation-History" class="hidden py-10">
+            <ul id="card-section"></ul>
         </section>
     </body>
 </html>
