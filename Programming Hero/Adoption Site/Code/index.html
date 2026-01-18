@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <!-- Tailwind Play CDN (quick development) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI compiled CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" />
+
+    <style>
+      :root {
+        --btn-color: #0E7A81;
+      }
+    </style>
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm p-5">
+                <div class="navbar-start px-20">
+                    <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                        tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                    </div>
+                    <div class="btn btn-ghost text-xl">
+                        <img src="/images/logo.webp">
+                        <p>Peddy</p>
+                    </div>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end px-20">
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img
+                                    alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                            </div>
+                        </div>
+                        <ul
+                            tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                        </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="flex flex-col items-center justify-center min-h-screen gap-10 px-4">
+                <h4 class="text-gray-500 font-bold text-2xl">Bringing Families Together</h4>
+                <h1 class="font-black text-6xl text-center">Your Path to Adoption<br>Starts Here</h1>
+                <p class="text-center font-normal">It is a long established fact that a reader will be distracted by the readable content of a page when looking<br>at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button class="btn text-white border-none text-xl px-6 hover:bg-sky-700" style="background-color: var(--btn-color);">View More</button>
+                <img src="/images/pet.webp">
+            </div>
+
+            <div class="text-center">
+                <h2 class="text-5xl font-bold text-gray-800 my-3">Adopt  Your  Best Friend</h2>
+                <p class="font-regular text-base text-gray-600 my-7">It is a long established fact that a reader will be distracted by the readable content of a page<br>when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+
+            <div id="Buttons" align="center" class="flex flex-wrap justify-center gap-6 mt-20 mb-20">
+            </div>
+
+        </main>
+    </body>
+</html>
