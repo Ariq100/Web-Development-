@@ -5,6 +5,25 @@ function GetCategories(){
     .catch((error) => console.log('Error:', error));
 }
 
+function ShowCatagories(data){
+    const catagoryContainer = document.getElementById('Buttons');
+
+    data.forEach((item) => {
+        const button = document.createElement('li');
+        button.className = 'btn inline-flex flex-wrap place-content-evenly items-center px-3 py-3 bg-white border-0 shadow-none rounded-2xl w-auto h-auto';
+
+        button.innerHTML = `
+            <div class="btn inline-flex items-center px-6 py-3 bg-white border border-gray-200 rounded-2xl w-auto h-auto gap-5 duration-500 ease-in-out hover:bg-[#0E7A811A] hover:border-green-800" onclick="ShowCategoryPets('${item.category}')" id='${item.category}'>
+                <img src="${item.category_icon}" alt="icon" class="w-4/7 h-auto">
+                <p class="m-0 font-bold text-xl">${item.category}</p>
+            </div>
+        `;
+
+        catagoryContainer.appendChild(button);
+    })
+    
+}
+
 function GetAllPets(){
     fetch('https://openapi.programming-hero.com/api/peddy/pets')
     .then((res) => res.json())
@@ -14,6 +33,19 @@ function GetAllPets(){
 
 function ShowPets(data){
     const cardContainer = document.getElementById('Cards');
+    cardContainer.classList = "flex flex-wrap gap-10 justify-center mb-20 mx-auto px-10";
+    cardContainer.innerHTML = "";
+
+    if (data.length == 0){
+        cardContainer.classList = "bg-gray-100 rounded-lg w-3/4 flex flex-col justify-center items-center align-center text-center p-10 mx-auto my-20 gap-7";
+
+        cardContainer.innerHTML = `
+            <img src="/images/error.webp" alt="No Data Found" class="w-1/6 h-1/7 mt-20">
+            <h1 class="font-bold text-4xl">No Information Available</h1>
+            <p class="text-gray-600 mb-20">It is a long established fact that a reader will be distracted by the readable content of a page when looking at<br>its layout. The point of using Lorem Ipsum is that it has a.</p>
+        `;
+        return 0;
+    }
 
     // console.log(data);
     count = 0;
@@ -86,13 +118,13 @@ function CreateCards(item, cardContainer){
             </p>
 
             <div class="card-actions justify-center mt-2 mb-0">
-                <div class="btn btn-primary bg-white text-gray-500 font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 hover:bg-green-200 hover:text-green-900 hover:border-green-500">
+                <div class="btn btn-primary bg-white text-gray-500 font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 duration-300 ease-in-out hover:bg-green-200 hover:text-green-900 hover:border-green-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                     </svg>
                 </div>
-            <button class="btn btn-primary bg-white text-[#0E7A81] font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 hover:bg-green-200 hover:text-green-900 hover:border-green-500">Adopt</button>
-            <button class="btn btn-primary bg-white text-[#0E7A81] font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 hover:bg-green-200 hover:text-green-900 hover:border-green-500">Details</button>
+            <button class="btn btn-primary bg-white text-[#0E7A81] font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 duration-300 ease-in-out hover:bg-green-200 hover:text-green-900 hover:border-green-500">Adopt</button>
+            <button class="btn btn-primary bg-white text-[#0E7A81] font-bold text-basegreen-900 border-1 border-gray-200 shadow-0 duration-300 ease-in-out hover:bg-green-200 hover:text-green-900 hover:border-green-500">Details</button>
             </div>
         </div>
     `;
@@ -100,22 +132,31 @@ function CreateCards(item, cardContainer){
     cardContainer.appendChild(button);
 }
 
-function ShowCatagories(data){
-    const catagoryContainer = document.getElementById('Buttons');
+let previouslySelectedButton = null;
 
-    data.forEach((item) => {
-        const button = document.createElement('li');
-        button.className = 'btn inline-flex items-center px-3 py-3 bg-white border border-gray-200 rounded-2xl w-1/4 h-auto';
+function ShowCategoryPets(item){
+    fetch(`https://openapi.programming-hero.com/api/peddy/category/${item}`)
+    .then((res) => res.json())
+    .then((data) => ShowPets(data.data))
+    .catch((error) => console.log('Error:', error));
 
-        button.innerHTML = `
-            <img src="${item.category_icon}" alt="icon" class="w-4/7">
-            <p class="m-0">${item.category}</p>
-        `;
-
-        catagoryContainer.appendChild(button);
-    })
+    const button = document.getElementById(item);
     
+    // Remove styling from previously selected button
+    if (previouslySelectedButton) {
+        previouslySelectedButton.classList.remove("rounded-full", "border-green-800", "bg-[#0E7A811A]", "py-6", "px-12");
+        previouslySelectedButton.classList.add("rounded-2xl", "border-gray-200", "bg-white");
+    }
+    
+    // Add styling to currently selected button
+    button.classList.remove("rounded-2xl", "border-gray-200", "bg-white");
+    button.classList.add("rounded-full", "border-green-800", "bg-[#0E7A811A]", "py-6", "px-12");
+    
+    // Update the previously selected button reference
+    previouslySelectedButton = button;
 }
+
+
 
 GetAllPets();
 GetCategories();
