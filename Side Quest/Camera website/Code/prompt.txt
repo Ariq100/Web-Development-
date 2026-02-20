@@ -1,0 +1,5 @@
+- Make a website including the pictures in images, use sales funneling and make it attratice with good animation
+- Make a minimalist landing page
+- make cards for each product and use lorem for the name (use lorem2 or lorem3) and make it h3
+- use lorem to describe the product a bit
+- use csstailwind for the whole thing and make it responsive
